@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+
+{% block content%}
+  <form action ="#" method="POST">
+    <input type="text" name="product" placeholder="Enter Product Name" value="{{product}}"/>
+    <input type="submit" value="submit"/>
+  </form>
+    <h1>All results</h1>
+    {% for item in range(value|length) %}
+        <p>{{value[item][0]}}</p>
+    {% endfor %}
+{% endblock%}
